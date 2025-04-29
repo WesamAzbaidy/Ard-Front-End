@@ -1,0 +1,67 @@
+.time-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-color);
+  height: 100%;
+  min-height: 250px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.city {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.current-time {
+  font-size: 68px;
+}
+
+.day-date {
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.day-and-date {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.timeCard {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  .city {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+
+  .current-time {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .time-card {
+    min-height: 200px;
+  }
+
+  .city {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .current-time {
+    font-size: 54px;
+  }
+}

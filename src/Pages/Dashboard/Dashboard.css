@@ -1,0 +1,104 @@
+.dashboard-container {
+  min-height: 100vh;
+  width: 100% - 160px;
+  overflow-x: hidden;
+  padding: 1rem 1.5rem;
+}
+
+.dashboard-content {
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 55px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.card {
+  background-color: var(--primary-color);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.timeCard {
+  grid-column: span 5;
+}
+
+.detailsCard {
+  grid-column: span 7;
+}
+
+.daysForecast {
+  grid-column: span 4;
+}
+
+.hourlyForecast {
+  grid-column: span 8;
+}
+
+.errorMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  text-align: center;
+  color: var(--text-color);
+  font-size: 4vw;
+}
+@media (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .timeCard {
+    grid-column: span 3;
+  }
+
+  .detailsCard {
+    grid-column: span 3;
+  }
+
+  .daysForecast {
+    grid-column: span 2;
+  }
+
+  .hourlyForecast {
+    grid-column: span 4;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .timeCard,
+  .detailsCard,
+  .daysForecast,
+  .hourlyForecast {
+    grid-column: 1 / -1;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .details-card {
+    flex-direction: column;
+  }
+
+  .forecast-table {
+    width: 100%;
+  }
+}

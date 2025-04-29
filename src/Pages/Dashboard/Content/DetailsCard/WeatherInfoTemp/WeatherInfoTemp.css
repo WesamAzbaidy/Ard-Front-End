@@ -1,0 +1,134 @@
+.weather-info-temp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: var(--text-color);
+}
+
+.temp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.temp .tempC {
+  font-weight: 800;
+  font-size: 52px;
+  background: linear-gradient(90deg, var(--text-color) 0%, #00000000 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin-top: 8px;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.temp p:not(.tempC) {
+  margin-top: 2px;
+  margin-bottom: 16px;
+  white-space: nowrap;
+  text-align: center;
+  width: 100%;
+}
+
+.time-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.sunrise,
+.sunset {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.sunrise svg,
+.sunset svg {
+  width: 60px;
+  height: 35px;
+  min-width: 60px;
+  flex-shrink: 0;
+}
+
+.time-label-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: calc(100% - 68px);
+}
+
+.time-label-container p {
+  margin: 0;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  font-size: 14px;
+}
+
+.time-label-container p:last-child {
+  font-weight: bold;
+}
+
+@media (max-width: 992px) {
+  .temp .tempC {
+    font-size: 46px;
+  }
+
+  .sunrise svg,
+  .sunset svg {
+    width: 50px;
+    height: 30px;
+    min-width: 50px;
+  }
+
+  .time-label-container {
+    width: calc(100% - 58px);
+  }
+}
+
+@media (max-width: 776px) {
+  .temp .tempC {
+    font-size: 42px;
+  }
+
+  .time-sections {
+    width: 90%;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .temp .tempC {
+    font-size: 38px;
+  }
+
+  .sunrise svg,
+  .sunset svg {
+    width: 45px;
+    height: 28px;
+    min-width: 45px;
+  }
+
+  .time-label-container {
+    width: calc(100% - 53px);
+  }
+
+  .time-label-container p {
+    font-size: 13px;
+    height: 20px;
+  }
+}

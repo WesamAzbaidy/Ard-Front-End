@@ -1,0 +1,73 @@
+.location-button {
+  border-radius: 20px;
+  background-color: #4cbb17;
+  border: none;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  min-height: 36px;
+  font-weight: bold;
+}
+
+.location-button:hover {
+  background-color: #3aa412;
+}
+
+.location-button svg {
+  height: 20px;
+  min-width: 20px;
+  margin-right: 4px;
+}
+
+@media (max-width: 768px) {
+  .location-button {
+    font-size: 0.6rem;
+    padding: 6px 8px;
+    min-height: 32px;
+  }
+
+  .location-button svg {
+    height: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .location-button {
+    font-size: 0.6rem;
+    padding: 4px 6px;
+    min-height: 30px;
+  }
+
+  .location-button svg {
+    height: 14px;
+    min-width: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .location-button {
+    font-size: 0.55rem;
+    padding: 3px 5px;
+    min-height: 28px;
+  }
+
+  .location-button svg {
+    height: 12px;
+    min-width: 12px;
+    margin-right: 2px;
+  }
+}
+
+@media (max-width: 360px) {
+  .location-button {
+    font-size: 0.35rem;
+    padding: 2px 4px;
+    min-height: 26px;
+  }
+}

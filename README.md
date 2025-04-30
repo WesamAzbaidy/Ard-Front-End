@@ -1,46 +1,88 @@
-# Getting Started with Create React App
+# Ard Front-End
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive React application for the Ard platform.
 
-## Available Scripts
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![React](https://img.shields.io/badge/React-18.x-61dafb.svg)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178c6.svg)
 
-In the project directory, you can run:
+## 📋 Overview
 
-### `npm start`
+This repository contains the client-side codebase for the Ard platform, providing an intuitive and responsive user interface built with modern web technologies.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🚀 Quick Start
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```bash
+# Clone the repository
+git clone https://github.com/WesamAzbaidy/Ard-Front-End.git
 
-### `npm test`
+# Navigate to project directory
+cd Ard-Front-End
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Install dependencies
+npm install
 
-### `npm run build`
+# Start development server
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Then open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **React** - UI library
+- **TypeScript** - Type safety
+- **Redux Toolkit** - State management
+- **Axios** - API requests
 
-### `npm run eject`
+## 📁 Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+Ard-Front-End/
+├── public/                  # Static files
+├── src/
+│   ├── api/                 # API services
+│   ├── assets/              # Images, fonts, etc.
+│   ├── components/          # UI components
+│   ├── theme/               # Custom Theme
+│   ├── pages/               # Page components
+│   ├── routes/              # Routing configuration
+│   ├── store/               # Redux store
+│   ├── styles/              # Global styles
+│   ├── types/               # TypeScript types
+│   ├── utils/               # Utility functions
+│   ├── App.tsx              # Root component
+│   └── index.tsx            # Entry point
+└── config files (.env, tsconfig.json, etc.)
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📝 Available Scripts
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm start` | Run production build |
+| `npm run test` | Run test suite |
+| `npm run lint` | Lint codebase |
+| `npm run format` | Format with Prettier |
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 📊 State Management
 
-## Learn More
+We use Redux Toolkit with the following structure:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Feature-based slices
+- Async operations with `createAsyncThunk`
+- Selectors for accessing state
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🔍 Code Quality
+
+- ESLint for code linting
+- Prettier for code formatting
+- TypeScript for static type checking
+
+## 📞 Contact
+
+- **Wesam Azbaidy** -  w.azbaidy1999@gmail.com
+
+---
